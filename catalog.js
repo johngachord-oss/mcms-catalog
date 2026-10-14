@@ -13,11 +13,11 @@
   f.href = "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap";
   document.head.appendChild(f);
   var st = document.createElement("style");
-  st.textContent = "/* Layout: a supply-room catalog. Category tabs, a grid of product \"labels\", and a quote list that reads like an order sheet. Light-only on purpose so it matches the GoDaddy site. */\n:root{\n  --ink:#1c2633;        /* navy, text and primary buttons */\n  --ink-soft:#4a5565;\n  --kraft:#d6c7b3;      /* MCMS site tan */\n  --kraft-pale:#f3eee6;\n  --paper:#fbfaf7;\n  --rule:#e3dbcf;\n  --teal:#0b6e78;       /* action color */\n  --teal-pale:#e2f1f2;\n  --ok:#2f7a3e;\n  --display:\"Montserrat\",system-ui,-apple-system,\"Segoe UI\",Arial,sans-serif;\n  --body:\"Montserrat\",system-ui,-apple-system,\"Segoe UI\",Arial,sans-serif;\n  --mono:\"Montserrat\",system-ui,-apple-system,\"Segoe UI\",Arial,sans-serif;\n  color-scheme:light;\n}\n.mq,.mq *{box-sizing:border-box}\n.mq [hidden]{display:none!important}\nbody{background:var(--paper);color:var(--ink);margin:0}\n.mq{font-family:var(--body);font-size:15px;line-height:1.55;font-variant-numeric:tabular-nums;color:var(--ink);background:var(--paper);\n  max-width:1180px;margin:0 auto;padding-inline:16px;padding-block:24px 40px;position:relative}\n:where(.mq) :where(button,input,select,textarea){font:inherit;color:inherit}\n.mq :focus-visible{outline:3px solid var(--teal);outline-offset:2px}\n\n/* Header */\n.mq-head{display:flex;flex-wrap:wrap;gap:16px;align-items:end;justify-content:space-between;\n  border-bottom:3px solid var(--ink);padding-bottom:16px}\n.mq-eyebrow{font-family:var(--mono);font-weight:600;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);margin:0}\n.mq-title{font-family:var(--display);font-weight:800;font-size:clamp(26px,4vw,38px);line-height:1.05;margin:6px 0 8px;text-transform:uppercase;letter-spacing:.02em;text-wrap:balance}\n.mq-sub{margin:0;color:var(--ink-soft);max-width:60ch}\n.mq-listbtn{display:inline-flex;align-items:center;gap:10px;background:var(--ink);color:#fff;border:0;border-radius:4px;\n  padding:12px 18px;font-weight:600;cursor:pointer;white-space:nowrap}\n.mq-listbtn:hover{background:#000}\n.mq-count{font-family:var(--mono);background:var(--kraft);color:var(--ink);border-radius:999px;min-width:26px;height:26px;\n  display:inline-grid;place-items:center;font-size:13px;padding-inline:6px}\n.mq-count.bump{animation:bump .35s ease}\n@keyframes bump{50%{transform:scale(1.25)}}\n\n/* How it works */\n.mq-steps{list-style:none;margin:18px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}\n.mq-steps li{display:flex;gap:10px;align-items:baseline;font-size:15px;color:var(--ink-soft)}\n.mq-steps b{font-family:var(--mono);font-weight:800;color:var(--teal);font-size:13px}\n\n/* Controls */\n.mq-controls{display:flex;flex-direction:column;gap:12px;margin-top:22px}\n.mq-search{width:100%;border:1.5px solid var(--rule);background:#fff;border-radius:4px;padding:12px 14px;font-size:16px}\n.mq-search:focus{border-color:var(--teal);outline:none}\n.mq-tabs{display:flex;flex-wrap:wrap;gap:8px}\n.mq-tab{border:1.5px solid var(--rule);background:#fff;border-radius:999px;padding:7px 14px;cursor:pointer;font-weight:600;font-size:14px}\n.mq-tab[aria-pressed=\"true\"]{background:var(--ink);border-color:var(--ink);color:#fff}\n.mq-tab span{font-family:var(--mono);font-size:12px;opacity:.7;margin-left:4px}\n.mq-subs{display:flex;flex-wrap:wrap;gap:6px}\n.mq-sub-chip{border:0;background:var(--kraft-pale);border-radius:4px;padding:5px 10px;font-size:14px;cursor:pointer;color:var(--ink-soft)}\n.mq-sub-chip[aria-pressed=\"true\"]{background:var(--teal-pale);color:var(--teal);font-weight:600}\n\n/* Grid */\n.mq-section{margin-top:28px}\n.mq-section h3{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:19px;letter-spacing:.04em;flex-wrap:wrap;margin:0 0 12px;\n  display:flex;align-items:baseline;gap:10px}\n.mq-section h3 small{font-family:var(--mono);font-size:12px;font-weight:500;color:var(--ink-soft);letter-spacing:0;text-transform:none;font-weight:500}\n.mq-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px}\n.mq-card{background:#fff;border:1px solid var(--rule);border-radius:6px;display:flex;flex-direction:column;overflow:hidden}\n.mq-img{aspect-ratio:1/1;max-width:100%;background:var(--kraft-pale);display:grid;place-items:center;border:0;padding:12px;cursor:zoom-in;width:100%}\n.mq-img img{max-height:100%;object-fit:contain}\n.mq-ph{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:16px;letter-spacing:.04em;color:var(--ink-soft);text-align:center;line-height:1.1}\n.mq-ph small{display:block;font-family:var(--mono);font-size:11px;text-transform:none;margin-top:6px}\n.mq-body{padding:12px 14px 14px;display:flex;flex-direction:column;gap:6px;flex:1}\n.mq-meta{display:flex;flex-wrap:wrap;gap:6px;align-items:center}\n.mq-pack{font-family:var(--mono);font-weight:600;font-size:11px;letter-spacing:.03em;background:var(--ink);color:#fff;border-radius:3px;padding:2px 7px}\n.mq-sku{font-family:var(--mono);font-size:11px;letter-spacing:.02em;color:var(--ink-soft)}\n.mq-name{font-weight:600;font-size:15px;line-height:1.3;margin:0}\n.mq-cat{font-size:13px;color:var(--ink-soft);margin:0}\n.mq-add{margin-top:auto;display:flex;gap:8px;padding-top:8px}\n.mq-qty{display:flex;border:1.5px solid var(--rule);border-radius:4px;overflow:hidden}\n.mq-qty button{border:0;background:var(--kraft-pale);width:34px;cursor:pointer;font-size:18px;line-height:1}\n.mq-qty input{width:44px;border:0;text-align:center;font-variant-numeric:tabular-nums;-moz-appearance:textfield}\n.mq-qty input::-webkit-outer-spin-button,.mq-qty input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}\n.mq-addbtn{flex:1;border:0;border-radius:4px;background:var(--teal);color:#fff;font-weight:600;cursor:pointer;padding:9px 10px}\n.mq-addbtn:hover{filter:brightness(.92)}\n.mq-addbtn.added{background:var(--ok)}\n.mq-empty{padding:40px 16px;text-align:center;color:var(--ink-soft);border:1.5px dashed var(--rule);border-radius:6px;margin-top:24px}\n\n/* Panels (quote list + product view) */\n.mq-overlay{position:absolute;inset:0;background:rgba(28,38,51,.45);z-index:50;display:flex;justify-content:center;align-items:flex-start;padding:16px}\n.mq-panel{background:var(--paper);width:min(720px,100%);border-radius:8px;box-shadow:0 20px 50px rgba(0,0,0,.25);overflow:hidden;\n  position:sticky;top:16px}\n.mq-panel-head{display:flex;justify-content:space-between;align-items:center;gap:12px;background:var(--ink);color:#fff;padding:14px 18px}\n.mq-panel-head h3{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:17px;margin:0;letter-spacing:.02em}\n.mq-x{border:0;background:transparent;color:#fff;font-size:28px;line-height:1;cursor:pointer;padding:0 4px}\n.mq-panel-body{padding:18px;display:flex;flex-direction:column;gap:18px}\n.mq-lines{width:100%;border-collapse:collapse;font-size:15px}\n.mq-lines th{font-family:var(--mono);font-weight:700;font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-soft);text-align:left;\n  border-bottom:2px solid var(--ink);padding:6px 6px}\n.mq-lines td{border-bottom:1px solid var(--rule);padding:10px 6px;vertical-align:middle}\n.mq-lines td.n{font-variant-numeric:tabular-nums}\n.mq-lines .mq-sku{display:block}\n.mq-rm{border:0;background:transparent;color:var(--ink-soft);cursor:pointer;text-decoration:underline;font-size:14px}\n.mq-tablewrap{overflow-x:auto}\n.mq-form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}\n.mq-field{display:flex;flex-direction:column;gap:4px;min-width:0}\n.mq-field.full{grid-column:1/-1}\n.mq-field label{font-size:13px;font-weight:600}\n.mq-field label i{font-style:normal;color:var(--teal)}\n.mq-field input,.mq-field textarea,.mq-field select{border:1.5px solid var(--rule);background:#fff;border-radius:4px;padding:10px 12px;width:100%}\n.mq-field input:focus,.mq-field textarea:focus,.mq-field select:focus{border-color:var(--teal);outline:none}\n.mq-hp{position:absolute;left:-9999px}\n.mq-submit{background:var(--teal);color:#fff;border:0;border-radius:4px;padding:14px 18px;font-weight:600;font-size:17px;cursor:pointer;width:100%}\n.mq-submit[disabled]{opacity:.6;cursor:wait}\n.mq-note{font-size:14px;color:var(--ink-soft);margin:0}\n.mq-error{color:#a32020;font-size:14px;margin:0}\n.mq-done{text-align:center;padding:12px 4px;display:flex;flex-direction:column;gap:12px;align-items:center}\n.mq-done h4{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:22px;margin:0}\n.mq-summary{width:100%;font-family:var(--mono);font-size:13px;line-height:1.5;background:#fff;border:1px solid var(--rule);border-radius:4px;padding:10px;min-height:140px;resize:vertical}\n.mq-row{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}\n.mq-ghost{border:1.5px solid var(--ink);background:transparent;border-radius:4px;padding:10px 16px;font-weight:600;cursor:pointer;color:var(--ink);text-decoration:none}\n.mq-detail{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:18px;align-items:start}\n.mq-detail .mq-img{cursor:default}\n.mq-detail p{margin:0}\n.mq-brand{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--teal);margin:2px 0 -4px}\n.mq-flag{font-size:11px;font-weight:600;background:#fdf0d5;color:#7a4b00;border-radius:3px;padding:2px 6px}\n.mq-size{display:flex;flex-direction:column;gap:3px;font-size:12px;font-weight:600;color:var(--ink-soft);margin-top:4px}\n.mq-size select{border:1.5px solid var(--rule);background:#fff;border-radius:4px;padding:7px 8px;font-size:14px;font-weight:500;color:var(--ink);width:100%}\n.mq-dcol{display:flex;flex-direction:column;gap:10px;min-width:0}\n.mq-panel-body > .mq-ghost{align-self:flex-start}\n.mq-desc{font-size:13px;line-height:1.45;color:var(--ink-soft);margin:0;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}\n.mq-trust{margin-top:36px;border-top:1px solid var(--rule);padding-top:14px;display:flex;flex-wrap:wrap;gap:8px 24px;font-size:14px;color:var(--ink-soft)}\n.mq-trust b{color:var(--ink)}\n\n@media (max-width:640px){\n  .mq-steps{grid-template-columns:1fr}\n  .mq-form{grid-template-columns:1fr}\n  .mq-detail{grid-template-columns:1fr}\n  .mq-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}\n  .mq-add{flex-direction:column}\n  .mq-qty{justify-content:space-between}\n  .mq-qty input{flex:1}\n  .mq-listbtn{width:100%;justify-content:center}\n}\n@media (prefers-reduced-motion:reduce){.mq *{animation:none!important;transition:none!important}}";
+  st.textContent = "/* Layout: a supply-room catalog. Category tabs, a grid of product \"labels\", and a quote list that reads like an order sheet. Light-only on purpose so it matches the GoDaddy site. */\n:root{\n  --ink:#1c2633;        /* navy, text and primary buttons */\n  --ink-soft:#4a5565;\n  --kraft:#d6c7b3;      /* MCMS site tan */\n  --kraft-pale:#f3eee6;\n  --paper:#fbfaf7;\n  --rule:#e3dbcf;\n  --teal:#0b6e78;       /* action color */\n  --teal-pale:#e2f1f2;\n  --ok:#2f7a3e;\n  --display:\"Montserrat\",system-ui,-apple-system,\"Segoe UI\",Arial,sans-serif;\n  --body:\"Montserrat\",system-ui,-apple-system,\"Segoe UI\",Arial,sans-serif;\n  --mono:\"Montserrat\",system-ui,-apple-system,\"Segoe UI\",Arial,sans-serif;\n  color-scheme:light;\n}\n.mq,.mq *{box-sizing:border-box}\n.mq [hidden]{display:none!important}\nbody{background:var(--paper);color:var(--ink);margin:0}\n.mq{font-family:var(--body);font-size:15px;line-height:1.55;font-variant-numeric:tabular-nums;color:var(--ink);background:var(--paper);\n  max-width:1180px;margin:0 auto;padding-inline:16px;padding-block:24px 40px;position:relative}\n:where(.mq) :where(button,input,select,textarea){font:inherit;color:inherit}\n.mq :focus-visible{outline:3px solid var(--teal);outline-offset:2px}\n\n/* Header */\n.mq-head{display:flex;flex-wrap:wrap;gap:16px;align-items:end;justify-content:space-between;\n  border-bottom:3px solid var(--ink);padding-bottom:16px}\n.mq-eyebrow{font-family:var(--mono);font-weight:600;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);margin:0}\n.mq-title{font-family:var(--display);font-weight:800;font-size:clamp(26px,4vw,38px);line-height:1.05;margin:6px 0 8px;text-transform:uppercase;letter-spacing:.02em;text-wrap:balance}\n.mq-sub{margin:0;color:var(--ink-soft);max-width:60ch}\n.mq-listbtn{display:inline-flex;align-items:center;gap:10px;background:var(--ink);color:#fff;border:0;border-radius:4px;\n  padding:12px 18px;font-weight:600;cursor:pointer;white-space:nowrap}\n.mq-listbtn:hover{background:#000}\n.mq-count{font-family:var(--mono);background:var(--kraft);color:var(--ink);border-radius:999px;min-width:26px;height:26px;\n  display:inline-grid;place-items:center;font-size:13px;padding-inline:6px}\n.mq-count.bump{animation:bump .35s ease}\n@keyframes bump{50%{transform:scale(1.25)}}\n\n/* How it works */\n.mq-steps{list-style:none;margin:18px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}\n.mq-steps li{display:flex;gap:10px;align-items:baseline;font-size:15px;color:var(--ink-soft)}\n.mq-steps b{font-family:var(--mono);font-weight:800;color:var(--teal);font-size:13px}\n\n/* Controls */\n.mq-controls{display:flex;flex-direction:column;gap:12px;margin-top:22px}\n.mq-search{width:100%;border:1.5px solid var(--rule);background:#fff;border-radius:4px;padding:12px 14px;font-size:16px}\n.mq-search:focus{border-color:var(--teal);outline:none}\n.mq-tabs{display:flex;flex-wrap:wrap;gap:8px}\n.mq-tab{border:1.5px solid var(--rule);background:#fff;border-radius:999px;padding:7px 14px;cursor:pointer;font-weight:600;font-size:14px}\n.mq-tab[aria-pressed=\"true\"]{background:var(--ink);border-color:var(--ink);color:#fff}\n.mq-tab span{font-family:var(--mono);font-size:12px;opacity:.7;margin-left:4px}\n.mq-subs{display:flex;flex-wrap:wrap;gap:6px}\n.mq-sub-chip{border:0;background:var(--kraft-pale);border-radius:4px;padding:5px 10px;font-size:14px;cursor:pointer;color:var(--ink-soft)}\n.mq-sub-chip[aria-pressed=\"true\"]{background:var(--teal-pale);color:var(--teal);font-weight:600}\n\n/* Grid */\n.mq-section{margin-top:28px}\n.mq-section h3{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:19px;letter-spacing:.04em;flex-wrap:wrap;margin:0 0 12px;\n  display:flex;align-items:baseline;gap:10px}\n.mq-section h3 small{font-family:var(--mono);font-size:12px;font-weight:500;color:var(--ink-soft);letter-spacing:0;text-transform:none;font-weight:500}\n.mq-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px}\n.mq-card{background:#fff;border:1px solid var(--rule);border-radius:6px;display:flex;flex-direction:column;overflow:hidden}\n.mq-img{aspect-ratio:1/1;max-width:100%;background:var(--kraft-pale);display:grid;place-items:center;border:0;padding:12px;cursor:zoom-in;width:100%}\n.mq-img img{max-height:100%;object-fit:contain}\n.mq-ph{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:16px;letter-spacing:.04em;color:var(--ink-soft);text-align:center;line-height:1.1}\n.mq-ph small{display:block;font-family:var(--mono);font-size:11px;text-transform:none;margin-top:6px}\n.mq-body{padding:12px 14px 14px;display:flex;flex-direction:column;gap:6px;flex:1}\n.mq-meta{display:flex;flex-wrap:wrap;gap:6px;align-items:center}\n.mq-pack{font-family:var(--mono);font-weight:600;font-size:11px;letter-spacing:.03em;background:var(--ink);color:#fff;border-radius:3px;padding:2px 7px}\n.mq-sku{font-family:var(--mono);font-size:11px;letter-spacing:.02em;color:var(--ink-soft)}\n.mq-name{font-weight:600;font-size:15px;line-height:1.3;margin:0}\n.mq-cat{font-size:13px;color:var(--ink-soft);margin:0}\n.mq-add{margin-top:auto;display:flex;gap:8px;padding-top:8px}\n.mq-qty{display:flex;border:1.5px solid var(--rule);border-radius:4px;overflow:hidden}\n.mq-qty button{border:0;background:var(--kraft-pale);width:34px;cursor:pointer;font-size:18px;line-height:1}\n.mq-qty input{width:44px;border:0;text-align:center;font-variant-numeric:tabular-nums;-moz-appearance:textfield}\n.mq-qty input::-webkit-outer-spin-button,.mq-qty input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}\n.mq-addbtn{flex:1;border:0;border-radius:4px;background:var(--teal);color:#fff;font-weight:600;cursor:pointer;padding:9px 10px}\n.mq-addbtn:hover{filter:brightness(.92)}\n.mq-addbtn.added{background:var(--ok)}\n.mq-empty{padding:40px 16px;text-align:center;color:var(--ink-soft);border:1.5px dashed var(--rule);border-radius:6px;margin-top:24px}\n\n/* Panels (quote list + product view) */\n.mq-overlay{position:absolute;inset:0;background:rgba(28,38,51,.45);z-index:50;display:flex;justify-content:center;align-items:flex-start;padding:16px}\n.mq-panel{background:var(--paper);width:min(720px,100%);border-radius:8px;box-shadow:0 20px 50px rgba(0,0,0,.25);overflow:hidden;\n  position:sticky;top:16px}\n.mq-panel-head{display:flex;justify-content:space-between;align-items:center;gap:12px;background:var(--ink);color:#fff;padding:14px 18px}\n.mq-panel-head h3{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:17px;margin:0;letter-spacing:.02em}\n.mq-x{border:0;background:transparent;color:#fff;font-size:28px;line-height:1;cursor:pointer;padding:0 4px}\n.mq-panel-body{padding:18px;display:flex;flex-direction:column;gap:18px}\n.mq-lines{width:100%;border-collapse:collapse;font-size:15px}\n.mq-lines th{font-family:var(--mono);font-weight:700;font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-soft);text-align:left;\n  border-bottom:2px solid var(--ink);padding:6px 6px}\n.mq-lines td{border-bottom:1px solid var(--rule);padding:10px 6px;vertical-align:middle}\n.mq-lines td.n{font-variant-numeric:tabular-nums}\n.mq-lines .mq-sku{display:block}\n.mq-rm{border:0;background:transparent;color:var(--ink-soft);cursor:pointer;text-decoration:underline;font-size:14px}\n.mq-tablewrap{overflow-x:auto}\n.mq-form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}\n.mq-field{display:flex;flex-direction:column;gap:4px;min-width:0}\n.mq-field.full{grid-column:1/-1}\n.mq-field label{font-size:13px;font-weight:600}\n.mq-field label i{font-style:normal;color:var(--teal)}\n.mq-field input,.mq-field textarea,.mq-field select{border:1.5px solid var(--rule);background:#fff;border-radius:4px;padding:10px 12px;width:100%}\n.mq-field input:focus,.mq-field textarea:focus,.mq-field select:focus{border-color:var(--teal);outline:none}\n.mq-hp{position:absolute;left:-9999px}\n.mq-submit{background:var(--teal);color:#fff;border:0;border-radius:4px;padding:14px 18px;font-weight:600;font-size:17px;cursor:pointer;width:100%}\n.mq-submit[disabled]{opacity:.6;cursor:wait}\n.mq-note{font-size:14px;color:var(--ink-soft);margin:0}\n.mq-error{color:#a32020;font-size:14px;margin:0}\n.mq-done{text-align:center;padding:12px 4px;display:flex;flex-direction:column;gap:12px;align-items:center}\n.mq-done h4{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:22px;margin:0}\n.mq-summary{width:100%;font-family:var(--mono);font-size:13px;line-height:1.5;background:#fff;border:1px solid var(--rule);border-radius:4px;padding:10px;min-height:140px;resize:vertical}\n.mq-row{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}\n.mq-ghost{border:1.5px solid var(--ink);background:transparent;border-radius:4px;padding:10px 16px;font-weight:600;cursor:pointer;color:var(--ink);text-decoration:none}\n.mq-detail{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:18px;align-items:start}\n.mq-detail .mq-img{cursor:default}\n.mq-detail p{margin:0}\n.mq-brand{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--teal);margin:2px 0 -4px}\n.mq-flag{font-size:11px;font-weight:600;background:#fdf0d5;color:#7a4b00;border-radius:3px;padding:2px 6px}\n.mq-size{display:flex;flex-direction:column;gap:3px;font-size:12px;font-weight:600;color:var(--ink-soft);margin-top:4px}\n.mq-size select{border:1.5px solid var(--rule);background:#fff;border-radius:4px;padding:7px 8px;font-size:14px;font-weight:500;color:var(--ink);width:100%}\n.mq-dcol{display:flex;flex-direction:column;gap:10px;min-width:0}\n.mq-panel-body > .mq-ghost{align-self:flex-start}\n.mq-desc{font-size:13px;line-height:1.45;color:var(--ink-soft);margin:0;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}\n.mq-bx-wrap{margin-top:22px}\n.mq-kicker{font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);margin:0 0 10px}\n.mq-bx-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}\n.mq-bx{position:relative;text-align:left;background:#fff;border:1.5px solid var(--rule);border-radius:8px;padding:16px 18px 14px;cursor:pointer;display:flex;flex-direction:column;gap:5px;transition:border-color .15s,box-shadow .15s}\n.mq-bx:hover{border-color:var(--ink-soft)}\n.mq-bx[aria-pressed=\"true\"]{border-color:var(--teal);box-shadow:inset 0 4px 0 var(--teal)}\n.mq-bx-name{font-weight:800;font-size:20px;text-transform:uppercase;letter-spacing:.03em;line-height:1.1;padding-right:70px}\n.mq-bx-tag{font-size:13px;color:var(--ink-soft)}\n.mq-bx-meta{font-size:11px;font-weight:700;color:var(--teal);letter-spacing:.08em;text-transform:uppercase;margin-top:4px}\n.mq-bx-cats{font-size:12px;color:var(--ink-soft)}\n.mq-bx-on{position:absolute;top:14px;right:14px;font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;background:var(--teal-pale);color:var(--teal);padding:3px 8px;border-radius:999px}\n.mq-trust{margin-top:36px;border-top:1px solid var(--rule);padding-top:14px;display:flex;flex-wrap:wrap;gap:8px 24px;font-size:14px;color:var(--ink-soft)}\n.mq-trust b{color:var(--ink)}\n\n@media (max-width:640px){\n  .mq-steps{grid-template-columns:1fr}\n  .mq-form{grid-template-columns:1fr}\n  .mq-detail{grid-template-columns:1fr}\n  .mq-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}\n  .mq-add{flex-direction:column}\n  .mq-qty{justify-content:space-between}\n  .mq-qty input{flex:1}\n  .mq-listbtn{width:100%;justify-content:center}\n}\n@media (prefers-reduced-motion:reduce){.mq *{animation:none!important;transition:none!important}}";
   document.head.appendChild(st);
 
   // Page structure
-  host.innerHTML = "<div class=\"mq\" id=\"mq\">\n  <header class=\"mq-head\">\n    <div>\n      <p class=\"mq-eyebrow\">MCMS Distribution LLC · Veteran owned</p>\n      <h2 class=\"mq-title\">Product Catalog</h2>\n      <p class=\"mq-sub\">Commercial dish, hand care, housekeeping and laundry chemicals. Build your list and we'll send pricing within one business day.</p>\n    </div>\n    <button class=\"mq-listbtn\" id=\"mq-open\" type=\"button\">Quote list <span class=\"mq-count\" id=\"mq-count\">0</span></button>\n  </header>\n\n  <ol class=\"mq-steps\">\n    <li><b>01</b> Add products and quantities to your quote list.</li>\n    <li><b>02</b> Send the list with your contact info. No payment online.</li>\n    <li><b>03</b> We reply with pricing and delivery options.</li>\n  </ol>\n\n  <div class=\"mq-controls\">\n    <label for=\"mq-q\" class=\"mq-hp\">Search products</label>\n    <input id=\"mq-q\" class=\"mq-search\" type=\"search\" placeholder=\"Search by name or item # (try “sanitizer” or “5 gal”)\" autocomplete=\"off\">\n    <div class=\"mq-tabs\" id=\"mq-tabs\" role=\"group\" aria-label=\"Category\"></div>\n    <div class=\"mq-subs\" id=\"mq-subs\" role=\"group\" aria-label=\"Type\"></div>\n  </div>\n\n  <div id=\"mq-results\"></div>\n\n  <footer class=\"mq-trust\">\n    <span><b>Questions?</b> <span id=\"mq-email-foot\"></span></span>\n    <span>Prices are quoted per order. Case and pail sizes shown on each product.</span>\n  </footer>\n\n  <div class=\"mq-overlay\" id=\"mq-overlay\" hidden>\n    <div class=\"mq-panel\" role=\"dialog\" aria-modal=\"true\" aria-labelledby=\"mq-ptitle\" id=\"mq-panel\"></div>\n  </div>\n</div>";
+  host.innerHTML = "<div class=\"mq\" id=\"mq\">\n  <header class=\"mq-head\">\n    <div>\n      <p class=\"mq-eyebrow\">MCMS Distribution LLC · Veteran owned</p>\n      <h2 class=\"mq-title\">Product Catalog</h2>\n      <p class=\"mq-sub\">Commercial dish, hand care, housekeeping and laundry chemicals. Build your list and we'll send pricing within one business day.</p>\n    </div>\n    <button class=\"mq-listbtn\" id=\"mq-open\" type=\"button\">Quote list <span class=\"mq-count\" id=\"mq-count\">0</span></button>\n  </header>\n\n  <ol class=\"mq-steps\">\n    <li><b>01</b> Add products and quantities to your quote list.</li>\n    <li><b>02</b> Send the list with your contact info. No payment online.</li>\n    <li><b>03</b> We reply with pricing and delivery options.</li>\n  </ol>\n\n  <section class=\"mq-bx-wrap\" aria-label=\"Brands\">\n    <p class=\"mq-kicker\">Shop by brand</p>\n    <div class=\"mq-bx-grid\" id=\"mq-brands\" role=\"group\" aria-label=\"Brand\"></div>\n  </section>\n\n  <div class=\"mq-controls\">\n    <label for=\"mq-q\" class=\"mq-hp\">Search products</label>\n    <input id=\"mq-q\" class=\"mq-search\" type=\"search\" placeholder=\"Search by name or item # (try “sanitizer” or “5 gal”)\" autocomplete=\"off\">\n    <div class=\"mq-tabs\" id=\"mq-tabs\" role=\"group\" aria-label=\"Category\"></div>\n    <div class=\"mq-subs\" id=\"mq-subs\" role=\"group\" aria-label=\"Type\"></div>\n  </div>\n\n  <div id=\"mq-results\"></div>\n\n  <footer class=\"mq-trust\">\n    <span><b>Questions?</b> <span id=\"mq-email-foot\"></span> · 956-639-0174</span>\n    <span>Prices are quoted per order. Case and pail sizes shown on each product.</span>\n  </footer>\n\n  <div class=\"mq-overlay\" id=\"mq-overlay\" hidden>\n    <div class=\"mq-panel\" role=\"dialog\" aria-modal=\"true\" aria-labelledby=\"mq-ptitle\" id=\"mq-panel\"></div>\n  </div>\n</div>";
 
   // Catalog
   (function(){
@@ -182,14 +182,31 @@
     {id:"stain-pro-2", name:"Stain Pro 2 Reclaim", cat:"Laundry", sub:"Reclaim", pack:"1.5 lb.", sku:"PB0027175AA"},
     {id:"stain-pro-3", name:"Stain Pro 3 Reclaim", cat:"Laundry", sub:"Reclaim", pack:"1 lb.", sku:"PB0004950AA"}
   ];
-  var BRAND = "ProBlend";
-  var CATEGORIES = ["Warewash","Hand Care","Housekeeping","Laundry"];
-  var CAT_BLURB = {
-    "Warewash":"Dish machine, pot and pan, sanitizing and kitchen cleaning",
-    "Hand Care":"Soaps and sanitizers for staff and guest areas",
-    "Housekeeping":"Restroom, glass, air care, polish and the Galaxy dispensing system",
-    "Laundry":"On-premise laundry detergents, bleach, sours, softeners and spotters"
-  };
+  /* ============ BRANDS ============
+     One box per company. To add a company:
+     1. Add it to BRANDS below (id = short lowercase name, no spaces).
+     2. Give each of its products  brand:"thatid"  in PRODUCTS.
+     Products with no brand belong to the FIRST brand in this list.
+  */
+  var BRANDS = [
+    {id:"problend", name:"ProBlend", tagline:"Commercial cleaning and sanitation chemicals",
+     categories:["Warewash","Hand Care","Housekeeping","Laundry"],
+     blurbs:{
+       "Warewash":"Dish machine, pot and pan, sanitizing and kitchen cleaning",
+       "Hand Care":"Soaps and sanitizers for staff and guest areas",
+       "Housekeeping":"Restroom, glass, air care, polish and the Galaxy dispensing system",
+       "Laundry":"On-premise laundry detergents, bleach, sours, softeners and spotters"
+     }}
+  ];
+  var BYBRAND = {}; BRANDS.forEach(function(b){BYBRAND[b.id]=b});
+  function cats(bid){
+    if(bid==="all"){var a=[];BRANDS.forEach(function(b){cats(b.id).forEach(function(c){if(a.indexOf(c)<0)a.push(c)})});return a}
+    var b=BYBRAND[bid], out=(b.categories||[]).slice();
+    PRODUCTS.forEach(function(p){if(p.brand===bid)p.cats.forEach(function(c){if(out.indexOf(c)<0)out.push(c)})});
+    return out;
+  }
+  function inBrand(p,bid){return bid==="all"||p.brand===bid}
+  function blurb(bid,c){var b=BYBRAND[bid];return (b&&b.blurbs&&b.blurbs[c])||""}
   var OTHER = "~other";
   // "4/Gal." -> "Case of 4 × 1 gal", "5 Gal." -> "5 gal", "6/22 oz." -> "Case of 6 × 22 oz"
   function size(pack){
@@ -207,13 +224,15 @@
   
   var $ = function(id){return document.getElementById(id)};
   var root = $("mq");
-  var state = {cat:"All", sub:"All", q:""};
+  var state = {brand:BRANDS[0].id, cat:"All", sub:"All", q:""};
   var KEY = "mcms-quote-list-v2";
   
   // Every orderable line, keyed by item number (or product code + "~other" for "size to confirm")
   var LINES = {}, BYID = {};
   PRODUCTS.forEach(function(p){
     BYID[p.id]=p;
+    p.brand = p.brand || BRANDS[0].id;
+    p.brandName = (BYBRAND[p.brand]||BRANDS[0]).name;
     p.place = p.place || [].concat(p.sub).map(function(s){return [p.cat,s]});
     p.cats = []; p.subs = [];
     p.place.forEach(function(x){if(p.cats.indexOf(x[0])<0)p.cats.push(x[0]);if(p.subs.indexOf(x[1])<0)p.subs.push(x[1])});
@@ -247,16 +266,29 @@
     var t=e.target; if(t.tagName==="IMG"&&t.dataset.ph){t.outerHTML=t.dataset.ph}
   },true);
   
+  function renderBrands(){
+    var boxes=BRANDS.map(function(b){
+      var n=PRODUCTS.filter(function(p){return p.brand===b.id}).length, cs=cats(b.id);
+      return {id:b.id,name:b.name,tag:b.tagline||"",meta:n+" products · "+cs.length+" categories",cats:cs.join(" · ")};
+    });
+    if(BRANDS.length>1)boxes.unshift({id:"all",name:"All brands",tag:"Every product we carry",meta:PRODUCTS.length+" products",cats:BRANDS.map(function(b){return b.name}).join(" · ")});
+    $("mq-brands").innerHTML=boxes.map(function(b){var on=state.brand===b.id;
+      return '<button type="button" class="mq-bx" data-brand="'+esc(b.id)+'" aria-pressed="'+on+'">'+(on?'<span class="mq-bx-on">Viewing</span>':'')+
+        '<span class="mq-bx-name">'+esc(b.name)+'</span><span class="mq-bx-tag">'+esc(b.tag)+'</span>'+
+        '<span class="mq-bx-meta">'+esc(b.meta)+'</span><span class="mq-bx-cats">'+esc(b.cats)+'</span></button>';
+    }).join("");
+  }
+  
   function renderTabs(){
-    var tabs=["All"].concat(CATEGORIES);
+    var tabs=["All"].concat(cats(state.brand));
     $("mq-tabs").innerHTML=tabs.map(function(c){
-      var n=c==="All"?PRODUCTS.length:PRODUCTS.filter(function(p){return inCat(p,c)}).length;
+      var n=PRODUCTS.filter(function(p){return inBrand(p,state.brand)&&(c==="All"||inCat(p,c))}).length;
       return '<button type="button" class="mq-tab" data-cat="'+esc(c)+'" aria-pressed="'+(state.cat===c)+'">'+esc(c)+'<span>'+n+'</span></button>';
     }).join("");
     var subs=[];
     if(state.cat!=="All"){
-      PRODUCTS.forEach(function(p){if(inCat(p,state.cat))subsIn(p,state.cat).forEach(function(s){if(subs.indexOf(s)<0)subs.push(s)})});
-      var rank=function(sub){for(var i=0;i<PRODUCTS.length;i++){var x=PRODUCTS[i].place[0];if(x[0]===state.cat&&x[1]===sub)return i}return 1e6};
+      PRODUCTS.forEach(function(p){if(inBrand(p,state.brand)&&inCat(p,state.cat))subsIn(p,state.cat).forEach(function(s){if(subs.indexOf(s)<0)subs.push(s)})});
+      var rank=function(sub){for(var i=0;i<PRODUCTS.length;i++){var x=PRODUCTS[i].place[0];if(inBrand(PRODUCTS[i],state.brand)&&x[0]===state.cat&&x[1]===sub)return i}return 1e6};
       subs.sort(function(x,y){return rank(x)-rank(y)});
     }
     $("mq-subs").hidden=subs.length<2;
@@ -266,11 +298,12 @@
   }
   
   function matches(p){
+    if(!inBrand(p,state.brand))return false;
     if(state.cat!=="All"&&!inCat(p,state.cat))return false;
     if(state.sub!=="All"&&subsIn(p,state.cat).indexOf(state.sub)<0)return false;
     if(!state.q)return true;
     var extra=p.multi?p.opts.map(function(o){return o.pack+" "+size(o.pack)+" "+o.sku}).join(" "):(p.pack+" "+size(p.pack)+" "+p.sku);
-    var hay=(BRAND+" "+p.name+" "+(p.desc||"")+" "+extra+" "+p.cats.join(" ")+" "+p.subs.join(" ")+" "+(p.note||"")).toLowerCase();
+    var hay=(p.brandName+" "+p.name+" "+(p.desc||"")+" "+extra+" "+p.cats.join(" ")+" "+p.subs.join(" ")+" "+(p.note||"")).toLowerCase();
     return state.q.toLowerCase().split(/\s+/).every(function(w){return hay.indexOf(w)>-1});
   }
   
@@ -299,7 +332,7 @@
     return '<article class="mq-card">'+
       '<button type="button" class="mq-img" data-view="'+esc(p.id)+'" aria-label="View '+esc(p.name)+'">'+imgHTML(p)+'</button>'+
       '<div class="mq-body">'+metaHTML(p)+
-        '<p class="mq-brand">'+BRAND+'</p>'+
+        '<p class="mq-brand">'+esc(p.brandName)+'</p>'+
         '<h4 class="mq-name">'+esc(p.name)+'</h4>'+
         '<p class="mq-cat">'+esc(subsIn(p,c).join(" · "))+'</p>'+
         (p.desc?'<p class="mq-desc">'+esc(p.desc)+'</p>':'')+
@@ -313,11 +346,17 @@
     if(!shown.length){
       out='<div class="mq-empty">No products match “'+esc(state.q)+'”. Try a shorter word, or <button type="button" class="mq-rm" data-clear>clear the search</button>. Need something not listed? Add it in the notes when you send your list.</div>';
     }else{
-      CATEGORIES.forEach(function(c,i){
+      var groups=[], i=0;
+      (state.brand==="all"?BRANDS.map(function(b){return b.id}):[state.brand]).forEach(function(bid){
+        cats(bid).forEach(function(c){groups.push([bid,c])});
+      });
+      groups.forEach(function(g){
+        var bid=g[0], c=g[1], idx=i++;
         if(state.cat!=="All"&&c!==state.cat)return;
-        var items=shown.filter(function(p){return inCat(p,c)});
+        var items=shown.filter(function(p){return p.brand===bid&&inCat(p,c)});
         if(!items.length)return;
-        out+='<section class="mq-section"><h3>'+esc(c)+' <small>'+items.length+' products · '+esc(CAT_BLURB[c]||"")+'</small></h3><div class="mq-grid">'+items.map(function(p){return card(p,c,i)}).join("")+'</div></section>';
+        var title=(state.brand==="all"?BYBRAND[bid].name+" · ":"")+c, bl=blurb(bid,c);
+        out+='<section class="mq-section"><h3>'+esc(title)+' <small>'+items.length+' products'+(bl?' · '+esc(bl):'')+'</small></h3><div class="mq-grid">'+items.map(function(p){return card(p,c,idx)}).join("")+'</div></section>';
       });
     }
     $("mq-results").innerHTML=out;
@@ -341,7 +380,7 @@
     var sizes=p.desc?'<p>'+esc(p.desc)+'</p>':'';
     openPanel('<div class="mq-panel-head"><h3 id="mq-ptitle">'+esc(p.cat)+'</h3><button type="button" class="mq-x" data-close aria-label="Close">×</button></div>'+
       '<div class="mq-panel-body"><div class="mq-detail"><div class="mq-img">'+imgHTML(p)+'</div><div class="mq-dcol">'+
-      metaHTML(p)+'<p class="mq-brand">'+BRAND+'</p>'+
+      metaHTML(p)+'<p class="mq-brand">'+esc(p.brandName)+'</p>'+
       '<h4 class="mq-name" style="font-size:19px">'+esc(p.name)+'</h4><p class="mq-cat">'+esc(p.subs.join(" · "))+'</p>'+sizes+
       sizePicker(p,"sd-")+addRow(p,"d")+
       '<p class="mq-note">Need a spec sheet or SDS? Ask in your quote notes and we will send it.</p></div></div></div>');
@@ -381,7 +420,7 @@
   
   function summaryText(f){
     var lines=Object.keys(list).map(function(k){var L=LINES[k];
-      return "• "+list[k]+" x "+BRAND+" "+L.p.name+" ("+L.pack+")"+(k.indexOf(OTHER)>0?" [code "+L.sku+"]":" #"+L.sku)+(L.note?" ["+L.note+"]":"")});
+      return "• "+list[k]+" x "+L.p.brandName+" "+L.p.name+" ("+L.pack+")"+(k.indexOf(OTHER)>0?" [code "+L.sku+"]":" #"+L.sku)+(L.note?" ["+L.note+"]":"")});
     return "QUOTE REQUEST\n\nName: "+f.name+"\nBusiness: "+(f.biz||"-")+"\nEmail: "+f.mail+"\nPhone: "+f.phone+
       "\nCity/ZIP: "+(f.city||"-")+"\nPreferred contact: "+f.pref+"\n\nPRODUCTS\n"+lines.join("\n")+"\n\nNOTES\n"+(f.notes||"-");
   }
@@ -418,7 +457,7 @@
     if(SHEET_URL){
       btn.disabled=true; btn.textContent="Sending…";
       var items=Object.keys(list).map(function(k){var L=LINES[k];
-        return {qty:list[k],name:BRAND+" "+L.p.name,size:L.pack,sku:k.indexOf(OTHER)>0?"":L.sku,note:L.note||(k.indexOf(OTHER)>0?"Help choosing size":"")}});
+        return {qty:list[k],name:L.p.brandName+" "+L.p.name,size:L.pack,sku:k.indexOf(OTHER)>0?"":L.sku,note:L.note||(k.indexOf(OTHER)>0?"Help choosing size":"")}});
       fetch(SHEET_URL,{method:"POST",mode:"no-cors",headers:{"Content-Type":"text/plain;charset=utf-8"},
         body:JSON.stringify({name:f.name,biz:f.biz,mail:f.mail,phone:f.phone,city:f.city,pref:f.pref,notes:f.notes,items:items,website:""})})
       .then(ok).catch(fail);
@@ -440,6 +479,7 @@
   /* ---- Events ---- */
   root.addEventListener("click",function(e){
     var t=e.target.closest("button,a"); if(!t||!root.contains(t))return;
+    if(t.dataset.brand){state.brand=t.dataset.brand;state.cat="All";state.sub="All";renderBrands();renderTabs();renderResults();return}
     if(t.dataset.cat){state.cat=t.dataset.cat;state.sub="All";renderTabs();renderResults();return}
     if(t.dataset.sub){state.sub=t.dataset.sub;renderTabs();renderResults();return}
     if(t.hasAttribute("data-clear")){state.q="";$("mq-q").value="";renderResults();return}
@@ -478,6 +518,20 @@
   var timer; $("mq-q").addEventListener("input",function(e){clearTimeout(timer);timer=setTimeout(function(){state.q=e.target.value.trim();renderResults()},120)});
   
   $("mq-email-foot").textContent=BUSINESS_EMAIL;
-  renderTabs(); renderResults(); updateCount();
+  // Open a category from a link like /catalog#laundry or /catalog?cat=hand-care
+  (function(){
+    var where=[location.hash+" "+location.search];
+    try{if(window.top!==window)where.push(window.top.location.hash+" "+window.top.location.search)}catch(e){}
+    var txt=where.join(" ").toLowerCase();
+    var slug=function(x){return x.toLowerCase().replace(/[^a-z0-9]+/g,"-")};
+    BRANDS.forEach(function(b){if(txt.indexOf("#"+b.id)>-1||txt.indexOf("brand="+b.id)>-1)state.brand=b.id});
+    cats("all").forEach(function(c){
+      if(txt.indexOf("#"+slug(c))>-1||txt.indexOf("cat="+slug(c))>-1){
+        state.cat=c;
+        if(cats(state.brand).indexOf(c)<0){for(var j=0;j<BRANDS.length;j++){if(cats(BRANDS[j].id).indexOf(c)>-1){state.brand=BRANDS[j].id;break}}}
+      }
+    });
+  })();
+  renderBrands(); renderTabs(); renderResults(); updateCount();
   })();
 })();
