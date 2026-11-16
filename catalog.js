@@ -17,7 +17,7 @@
   document.head.appendChild(st);
 
   // Page structure
-  host.innerHTML = "<div class=\"mq\" id=\"mq\">\n  <svg width=\"0\" height=\"0\" style=\"position:absolute\" aria-hidden=\"true\"><defs><linearGradient id=\"mqBody\" x1=\"0\" x2=\"1\"><stop offset=\"0\" stop-color=\"#ffffff\"/><stop offset=\".55\" stop-color=\"#f4f6f8\"/><stop offset=\"1\" stop-color=\"#dfe4ea\"/></linearGradient><linearGradient id=\"mqTeal\" x1=\"0\" x2=\"1\"><stop offset=\"0\" stop-color=\"#0d7f8a\"/><stop offset=\"1\" stop-color=\"#095c64\"/></linearGradient><linearGradient id=\"mqNavy\" x1=\"0\" x2=\"1\"><stop offset=\"0\" stop-color=\"#2a384a\"/><stop offset=\"1\" stop-color=\"#141c26\"/></linearGradient></defs></svg>\n  <header class=\"mq-head\">\n    <div>\n      <p class=\"mq-eyebrow\">MCMS Distribution LLC · Veteran owned</p>\n      <h2 class=\"mq-title\">Product Catalog</h2>\n      <p class=\"mq-sub\">Commercial dish, hand care, housekeeping and laundry chemicals. Build your list and we'll send pricing within one business day.</p>\n    </div>\n    <button class=\"mq-listbtn\" id=\"mq-open\" type=\"button\">Quote list <span class=\"mq-count\" id=\"mq-count\">0</span></button>\n  </header>\n\n  <ol class=\"mq-steps\">\n    <li><b>01</b> Add products and quantities to your quote list.</li>\n    <li><b>02</b> Send the list with your contact info. No payment online.</li>\n    <li><b>03</b> We reply with pricing and delivery options.</li>\n  </ol>\n\n  <section class=\"mq-bx-wrap\" aria-label=\"Brands\">\n    <p class=\"mq-kicker\">Shop by brand</p>\n    <div class=\"mq-bx-grid\" id=\"mq-brands\" role=\"group\" aria-label=\"Brand\"></div>\n  </section>\n\n  <section class=\"mq-bx-wrap\" aria-label=\"Can liners and paper products\">\n    <p class=\"mq-kicker\">Can liners &amp; paper products</p>\n    <div class=\"mq-bx-grid\">\n      <button type=\"button\" class=\"mq-bx mq-rq\" data-req=\"liners\"><span class=\"mq-rq-ic\"><svg viewBox=\"0 0 64 64\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M16 22h32l-4 34a4 4 0 0 1-4 4H24a4 4 0 0 1-4-4z\"/><path d=\"M12 22h40\"/><path d=\"M26 22v-6h12v6\"/><path d=\"M27 32v20M37 32v20\"/></svg></span><span class=\"mq-bx-name\">Can Liners</span><span class=\"mq-bx-tag\">Tell us the size, color and thickness. We'll match it.</span><span class=\"mq-bx-meta\">Build your request →</span></button>\n      <button type=\"button\" class=\"mq-bx mq-rq\" data-req=\"paper\"><span class=\"mq-rq-ic\"><svg viewBox=\"0 0 64 64\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><ellipse cx=\"26\" cy=\"14\" rx=\"12\" ry=\"5\"/><path d=\"M14 14v38c0 3 5 5 12 5s12-2 12-5V14\"/><ellipse cx=\"26\" cy=\"14\" rx=\"4\" ry=\"1.6\"/><path d=\"M38 22h12v26l-6-4-6 4\"/></svg></span><span class=\"mq-bx-name\">Paper Products</span><span class=\"mq-bx-tag\">Toilet tissue, towels, napkins and more, by ply and size.</span><span class=\"mq-bx-meta\">Build your request →</span></button>\n    </div>\n  </section>\n\n  <div class=\"mq-controls\">\n    <label for=\"mq-q\" class=\"mq-hp\">Search products</label>\n    <input id=\"mq-q\" class=\"mq-search\" type=\"search\" placeholder=\"Search by name or item # (try “sanitizer” or “5 gal”)\" autocomplete=\"off\">\n    <div class=\"mq-tabs\" id=\"mq-tabs\" role=\"group\" aria-label=\"Category\"></div>\n    <div class=\"mq-subs\" id=\"mq-subs\" role=\"group\" aria-label=\"Type\"></div>\n  </div>\n\n  <div id=\"mq-results\"></div>\n\n  <footer class=\"mq-trust\">\n    <span><b>Questions?</b> <span id=\"mq-email-foot\"></span></span>\n    <span>Prices are quoted per order. Case and pail sizes shown on each product.</span>\n  </footer>\n\n  <div class=\"mq-overlay\" id=\"mq-overlay\" hidden>\n    <div class=\"mq-panel\" role=\"dialog\" aria-modal=\"true\" aria-labelledby=\"mq-ptitle\" id=\"mq-panel\"></div>\n  </div>\n</div>";
+  host.innerHTML = "<div class=\"mq\" id=\"mq\">\n  <svg width=\"0\" height=\"0\" style=\"position:absolute\" aria-hidden=\"true\"><defs><linearGradient id=\"mqBody\" x1=\"0\" x2=\"1\"><stop offset=\"0\" stop-color=\"#ffffff\"/><stop offset=\".55\" stop-color=\"#f4f6f8\"/><stop offset=\"1\" stop-color=\"#dfe4ea\"/></linearGradient><linearGradient id=\"mqTeal\" x1=\"0\" x2=\"1\"><stop offset=\"0\" stop-color=\"#0d7f8a\"/><stop offset=\"1\" stop-color=\"#095c64\"/></linearGradient><linearGradient id=\"mqNavy\" x1=\"0\" x2=\"1\"><stop offset=\"0\" stop-color=\"#2a384a\"/><stop offset=\"1\" stop-color=\"#141c26\"/></linearGradient></defs></svg>\n  <header class=\"mq-head\">\n    <div>\n      <p class=\"mq-eyebrow\">MCMS Distribution LLC · Veteran owned</p>\n      <h2 class=\"mq-title\">Product Catalog</h2>\n      <p class=\"mq-sub\">Commercial dish, hand care, housekeeping and laundry chemicals. Build your list and we'll send pricing within one business day.</p>\n    </div>\n    <button class=\"mq-listbtn\" id=\"mq-open\" type=\"button\">Quote list <span class=\"mq-count\" id=\"mq-count\">0</span></button>\n  </header>\n\n  <ol class=\"mq-steps\">\n    <li><b>01</b> Add products and quantities to your quote list.</li>\n    <li><b>02</b> Send the list with your contact info. No payment online.</li>\n    <li><b>03</b> We reply with pricing and delivery options.</li>\n  </ol>\n\n  <section class=\"mq-bx-wrap\" aria-label=\"Brands\">\n    <p class=\"mq-kicker\">Shop our lines</p>\n    <div class=\"mq-bx-grid\" id=\"mq-brands\" role=\"group\" aria-label=\"Brand\"></div>\n  </section>\n\n  <section class=\"mq-bx-wrap\" aria-label=\"Can liners and paper products\">\n    <p class=\"mq-kicker\">Can liners &amp; paper products</p>\n    <div class=\"mq-bx-grid\">\n      <button type=\"button\" class=\"mq-bx mq-rq\" data-req=\"liners\"><span class=\"mq-rq-ic\"><svg viewBox=\"0 0 64 64\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M16 22h32l-4 34a4 4 0 0 1-4 4H24a4 4 0 0 1-4-4z\"/><path d=\"M12 22h40\"/><path d=\"M26 22v-6h12v6\"/><path d=\"M27 32v20M37 32v20\"/></svg></span><span class=\"mq-bx-name\">Can Liners</span><span class=\"mq-bx-tag\">Tell us the size, color and thickness. We'll match it.</span><span class=\"mq-bx-meta\">Build your request →</span></button>\n      <button type=\"button\" class=\"mq-bx mq-rq\" data-req=\"paper\"><span class=\"mq-rq-ic\"><svg viewBox=\"0 0 64 64\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><ellipse cx=\"26\" cy=\"14\" rx=\"12\" ry=\"5\"/><path d=\"M14 14v38c0 3 5 5 12 5s12-2 12-5V14\"/><ellipse cx=\"26\" cy=\"14\" rx=\"4\" ry=\"1.6\"/><path d=\"M38 22h12v26l-6-4-6 4\"/></svg></span><span class=\"mq-bx-name\">Paper Products</span><span class=\"mq-bx-tag\">Toilet tissue, towels, napkins and more, by ply and size.</span><span class=\"mq-bx-meta\">Build your request →</span></button>\n    </div>\n  </section>\n\n  <div class=\"mq-controls\">\n    <label for=\"mq-q\" class=\"mq-hp\">Search products</label>\n    <input id=\"mq-q\" class=\"mq-search\" type=\"search\" placeholder=\"Search by name or item # (try “sanitizer” or “5 gal”)\" autocomplete=\"off\">\n    <div class=\"mq-tabs\" id=\"mq-tabs\" role=\"group\" aria-label=\"Category\"></div>\n    <div class=\"mq-subs\" id=\"mq-subs\" role=\"group\" aria-label=\"Type\"></div>\n  </div>\n\n  <div id=\"mq-results\"></div>\n\n  <footer class=\"mq-trust\">\n    <span><b>Questions?</b> <span id=\"mq-email-foot\"></span></span>\n    <span>Prices are quoted per order. Case and pail sizes shown on each product.</span>\n  </footer>\n\n  <div class=\"mq-overlay\" id=\"mq-overlay\" hidden>\n    <div class=\"mq-panel\" role=\"dialog\" aria-modal=\"true\" aria-labelledby=\"mq-ptitle\" id=\"mq-panel\"></div>\n  </div>\n</div>";
 
   // Catalog
   (function(){
@@ -180,7 +180,73 @@
     {id:"spotter-chart", name:"Pre-Spotters Chart", cat:"Laundry", sub:"Pre-Spotters", opts:[{pack:"Regular", sku:"PB00CHARTSP"},{pack:"Small", sku:"PB00CHARTSPS"}]},
     {id:"stain-pro-1", name:"Stain Pro 1 Reclaim", cat:"Laundry", sub:"Reclaim", code:"PROBSP1XXXXX", opts:[{pack:"10/1.5 lb.", sku:"PB0027170AA"},{pack:"20 lb.", sku:"PB0027170AB"}], desc:"Reclaims tough stains on white linen that were missed in pre-spotting or washing."},
     {id:"stain-pro-2", name:"Stain Pro 2 Reclaim", cat:"Laundry", sub:"Reclaim", pack:"1.5 lb.", sku:"PB0027175AA"},
-    {id:"stain-pro-3", name:"Stain Pro 3 Reclaim", cat:"Laundry", sub:"Reclaim", pack:"1 lb.", sku:"PB0004950AA"}
+    {id:"stain-pro-3", name:"Stain Pro 3 Reclaim", cat:"Laundry", sub:"Reclaim", pack:"1 lb.", sku:"PB0004950AA"},
+    /* ---------- MOPS (shown as "Mops", no brand name on the cards) ----------
+       sku = the maker's item number, so the quote email tells you exactly what to order. */
+    // Looped-End Wet Mops
+    {id:"m-looped-premium", brand:"mops", name:"Premium Looped-End Wet Mop", cat:"Mops", sub:"Looped-End Wet Mops", code:"MWTXXXXX", opts:[{pack:"Small, 1 1/4\" band, white", sku:"WT12-1C"},{pack:"Medium, 1 1/4\" band, orange", sku:"WT2-16-1OR"},{pack:"Medium/Large 20 oz, 1 1/4\" band, white", sku:"WT20-1"},{pack:"Medium, 5\" band, orange", sku:"WT216-5 ORANGE"}], desc:"Cotton and synthetic blend. Looped ends mean less lint and a mop that lasts far longer than cut-end. Launderable. Our best all-around wet mop. 12 per case."},
+    {id:"m-looped-economy", brand:"mops", name:"Economy Looped-End Wet Mop", cat:"Mops", sub:"Looped-End Wet Mops", code:"MDOLXXXXX", opts:[{pack:"Medium, 1\" band", sku:"DOL16-1"},{pack:"Medium/Large, 1\" band", sku:"DOL20-1"},{pack:"Large, 5\" band", sku:"DOL24-5"},{pack:"X-Large, 1\" band", sku:"DOL32-1"}], desc:"100% cotton looped-end mop at a budget price. Good for restrooms, spot cleaning and heavy soil. 12 per case."},
+    // Cut-End Wet Mops
+    {id:"m-cut-cotton", brand:"mops", name:"Cotton Cut-End Wet Mop", cat:"Mops", sub:"Cut-End Wet Mops", code:"MSOXXXXX", opts:[{pack:"12 oz, 1\" band", sku:"SO1216"},{pack:"16 oz, 1\" band", sku:"SO1620"}], desc:"Classic 4-ply cotton mop. Absorbent and dependable for damp mopping, restrooms, kitchens and stripping."},
+    {id:"m-cut-rayon", brand:"mops", name:"Rayon Cut-End Wet Mop", cat:"Mops", sub:"Cut-End Wet Mops", pack:"16 oz, 1 1/4\" band", sku:"TOS1620", desc:"Great for laying disinfectant, sealer, stripper and finish. Resists mold and mildew so it stays fresher longer."},
+    // Microfiber Wet Mops
+    {id:"m-tube", brand:"mops", name:"Microfiber Tube Wet Mop", cat:"Mops", sub:"Microfiber Wet Mops", code:"MMOPXXXXX", opts:[{pack:"Small, 5\" band, blue", sku:"MOP26-BL-1"},{pack:"Large, 5\" band, blue", sku:"MOP-30L-BL"}], desc:"Lightweight, super absorbent microfiber loops. Picks up larger debris and launders well. Fits standard wet mop handles."},
+    // Scrubbing & Rough Floors
+    {id:"m-rough", brand:"mops", name:"Rough-Floor Wet Mop", cat:"Mops", sub:"Scrubbing & Rough Floors", pack:"Medium, 1 1/4\" band", sku:"RM-MED", desc:"Tightly woven fiber that holds up on rough, abrasive and anti-slip floors. Low lint. 12 per case."},
+    {id:"m-agitator", brand:"mops", name:"Scrubbing Agitator Mop", cat:"Mops", sub:"Scrubbing & Rough Floors", code:"MERXXXXX", opts:[], desc:"Mop with built-in scrub pads, so you scrub and mop in one pass. Three pad options for different floors. Fits standard handles."},
+    // Floor Finish Mops
+    {id:"m-finish", brand:"mops", name:"Floor Finish Mop", cat:"Mops", sub:"Floor Finish Mops", pack:"Large, 5\" band", sku:"FM24-5", desc:"Rayon looped-end mop made just for laying floor finish. Wide spread for gap-free coverage in one pass. Blue and white stripe."},
+    // Wall & Ceiling Mops
+    {id:"m-wall-head", brand:"mops", name:"Wall Wash Mop Head", cat:"Mops", sub:"Wall & Ceiling Mops", pack:"7\" x 3 5/8\" (12 per case)", sku:"716C", desc:"Cotton mop head for washing walls and ceilings. Stands up to repeat laundering."},
+    {id:"m-wall-frame", brand:"mops", name:"Wall Wash Frame & Handle", cat:"Mops", sub:"Wall & Ceiling Mops", pack:"Frame + handle", sku:"716", desc:"Frame and handle for the wall wash mop head."},
+    // Wet Mop Handles
+    {id:"m-handle-60", brand:"mops", name:"Wet Mop Handle, 60 in", cat:"Mops", sub:"Wet Mop Handles", pack:"60\"", sku:"CO-H-60"},
+    {id:"m-handle-twist", brand:"mops", name:"Twist-Lock Wet Mop Handle", cat:"Mops", sub:"Wet Mop Handles", code:"MTBXXXXX", opts:[], desc:"Chemical-resistant nylon head that twists to lock any 5\" band mop in place. Wood or fiberglass, 54\" or 60\". Tell us which in your notes."},
+    // Cut-End Dust Mops
+    {id:"m-dust-cotton", brand:"mops", name:"Cotton Dust Mop Head", cat:"Mops", sub:"Cut-End Dust Mops", code:"MSSXXXXX", opts:[], desc:"Economical, long-fringe cotton dust mop. 5\" or 3 1/4\" wide, 12\" to 72\" long. Fits standard wire frames. Tell us the length you need."},
+    {id:"m-dust-blue", brand:"mops", name:"Heavy-Duty Cotton Dust Mop, Blue", cat:"Mops", sub:"Cut-End Dust Mops", pack:"72\" x 5\" (3 per case)", sku:"D72-5B"},
+    // Looped-End Dust Mops
+    {id:"m-dust-looped", brand:"mops", name:"Launderable Looped Dust Mop", cat:"Mops", sub:"Looped-End Dust Mops", code:"MLMXXXXX", opts:[{pack:"12\"", sku:"LM12-5"},{pack:"18\"", sku:"LM18-5"},{pack:"24\"", sku:"LM24-5"},{pack:"48\"", sku:"LM48-5"}], desc:"Twisted polyester loops that won't unravel. Built for daily dust mopping and heavy laundering. 5\" wide, natural."},
+    // Disposable Dust Mops
+    {id:"m-dust-disp", brand:"mops", name:"Disposable Treated Dust Mop", cat:"Mops", sub:"Disposable Dust Mops", pack:"24\" x 5\"", sku:"D24-5", desc:"Pre-treated cotton blend for good pick-up with the convenience of a disposable. Great for warehouses and construction clean-up."},
+    // Small-Area Dust Mops
+    {id:"m-wedge-head", brand:"mops", name:"Wedge Dust Mop Head", cat:"Mops", sub:"Small-Area Dust Mops", pack:"12\" x 17\" spread", sku:"1010C", desc:"Lies flat to reach under desks and furniture. Made for classrooms and offices."},
+    {id:"m-wedge-frame", brand:"mops", name:"Wedge Dust Mop Frame & Handle", cat:"Mops", sub:"Small-Area Dust Mops", pack:"Frame + wood handle", sku:"1010"},
+    {id:"m-twoway", brand:"mops", name:"Two-Way Dust Mop Frame & Handle", cat:"Mops", sub:"Small-Area Dust Mops", code:"M2WXXXXX", opts:[{pack:"12\"", sku:"1019"},{pack:"15\"", sku:"1023"}], desc:"Compact frame and handle for smaller rooms."},
+    // Microfiber Dust Mops
+    {id:"m-mf-dustpad", brand:"mops", name:"Microfiber Dust Pad with Fringe", cat:"Mops", sub:"Microfiber Dust Mops", code:"MMFGXXXXX", opts:[{pack:"18\"", sku:"MFG-18V"},{pack:"24\"", sku:"MFG-24FR"}], desc:"Split microfiber traps fine dust with no lint. Fringe edges reach baseboards. Velcro back fits aluminum frames."},
+    {id:"m-mf-looped", brand:"mops", name:"Microfiber Looped Dust Mop, Green", cat:"Mops", sub:"Microfiber Dust Mops", pack:"60\", Velcro back", sku:"MFL-60LOOPGR", desc:"Traditional looped dust mop in launderable microfiber. Lint free and super absorbent."},
+    // Microfiber Flat Mops
+    {id:"m-mf-flat", brand:"mops", name:"Microfiber Flat Mop Pad", cat:"Mops", sub:"Microfiber Flat Mops", pack:"18\" (6 per case)", sku:"MFG-18", desc:"For damp mopping, dusting or laying finish. Velcro back fits 5\" flat mop frames."},
+    // Bucketless Mop Systems
+    {id:"m-bucketless", brand:"mops", name:"Bucketless Mop System", cat:"Mops", sub:"Bucketless Mop Systems", code:"MMMSXXXXX", opts:[{pack:"16\" frame, 52 oz tank", sku:"MMS-K18"},{pack:"21\" frame, 52 oz tank", sku:"MMS-K24"},{pack:"Junior: 16\" frame, 24 oz tank", sku:"MMS-K16JR"}], desc:"All-in-one tank, push-button sprayer and microfiber pad. No bucket or wringer. Use for damp mopping or laying floor finish."},
+    // Dust Mop Frames
+    {id:"m-frame-snap", brand:"mops", name:"Snap-On Wire Dust Mop Frame", cat:"Mops", sub:"Dust Mop Frames", code:"MSNXXXXX", opts:[{pack:"12\" x 5\"", sku:"SN12-5"},{pack:"18\" x 5\"", sku:"SN18-5"},{pack:"24\" x 5\"", sku:"SN24-5"},{pack:"30\" x 5\"", sku:"SN30-5"},{pack:"36\" x 5\"", sku:"SN36-5"},{pack:"60\" x 5\" with bracket", sku:"SN60-5"},{pack:"72\" x 5\" with bracket", sku:"SN72-5"},{pack:"18\" x 3 1/4\"", sku:"SN18-4"},{pack:"24\" x 3 1/4\"", sku:"SN24-4"},{pack:"72\" x 3 1/4\" with bracket", sku:"SN72-4"}], desc:"Heavy-duty welded wire, black powder coated against rust. Snaps onto the snap-on handle."},
+    {id:"m-frame-velcro", brand:"mops", name:"Velcro Dust Mop Frame", cat:"Mops", sub:"Dust Mop Frames", code:"MSZXXXXX", opts:[{pack:"24\" x 5\"", sku:"SZ24"},{pack:"36\" x 5\"", sku:"SZ36"},{pack:"48\" x 5\"", sku:"SZ48"}], desc:"No welds to break, so it outlasts wire frames. Covers the mop head and hides dirt. Velcro face holds microfiber pads."},
+    {id:"m-frame-alum", brand:"mops", name:"Aluminum Flat Mop Frame", cat:"Mops", sub:"Dust Mop Frames", code:"MDBXXXXX", opts:[], desc:"Lightweight aluminum frame with Velcro strips for quick pad changes. Works with any Velcro-backed pad."},
+    {id:"m-bigjob", brand:"mops", name:"Wide Hallway Dust Mop Tool", cat:"Mops", sub:"Dust Mop Frames", pack:"48\" (uses two 48\" heads)", sku:"BJD-96", desc:"Scissor design funnels dirt and folds narrow for tight spots. Swivel center and curved aluminum handle."},
+    // Dust Mop Handles
+    {id:"m-handle-snap", brand:"mops", name:"Snap-On Dust Mop Handle", cat:"Mops", sub:"Dust Mop Handles", code:"MSNHXXXXX", opts:[{pack:"1\" x 60\", wood", sku:"SN-H-60"}], desc:"One-hand attach to any snap-on wire frame. 360° swivel with a slide lock. Fiberglass also available."},
+    {id:"m-handle-alum", brand:"mops", name:"Aluminum Mop Handle", cat:"Mops", sub:"Dust Mop Handles", pack:"Aluminum", sku:"70HANDLE", desc:"Lightweight handle for aluminum flat mop frames. Fixed or extension."},
+    // High Dusters
+    {id:"m-hd-frame", brand:"mops", name:"Flexible High Duster Frame", cat:"Mops", sub:"High Dusters", pack:"27 1/2\"", sku:"FF20FR", desc:"Bendable foam frame that reaches tops of lights, vents and ledges. Threads onto standard handles."},
+    {id:"m-hd-sleeve", brand:"mops", name:"Flexible High Duster Sleeve", cat:"Mops", sub:"High Dusters", code:"MFFXXXXX", optLabel:"Style", opts:[{pack:"Microfiber, blue (value)", sku:"FF20MOP"},{pack:"Microfiber, black/white (most pick-up)", sku:"FF20MOP-TS"},{pack:"Polyester", sku:"FF20MOP-P"},{pack:"Looped microfiber, green", sku:"MFL-FF20-MOP-GR"}], desc:"20\" launderable sleeves for the flexible high duster frame."},
+    {id:"m-hd-kit", brand:"mops", name:"Microfiber High Duster Kit", cat:"Mops", sub:"High Dusters", pack:"20\" duster + 6 ft telescoping handle", sku:"FD22G-KIT", desc:"Microfiber feather-style duster with a 3-section aluminum handle. Shake or vacuum to clean."},
+    {id:"m-hd-refill", brand:"mops", name:"Microfiber Duster Refill, Blue", cat:"Mops", sub:"High Dusters", pack:"20\" (6 per case)", sku:"FD22B"},
+    // Pipe & Overhead Dusters
+    {id:"m-pipe-tool", brand:"mops", name:"Pipe Duster Tool", cat:"Mops", sub:"Pipe & Overhead Dusters", pack:"Wire frame", sku:"709P", desc:"Pre-shaped to wrap overhead pipes and light fixtures. Fits a threaded handle."},
+    {id:"m-pipe-refill", brand:"mops", name:"Pipe Duster Refill", cat:"Mops", sub:"Pipe & Overhead Dusters", pack:"Cotton", sku:"700C", desc:"Launderable cotton cover for the pipe duster tool. Also works as a hand mitt."},
+    // Microfiber Cloths
+    {id:"m-cloth", brand:"mops", name:"Microfiber Terry Cloth, 16 x 16 in", cat:"Mops", sub:"Microfiber Cloths", optLabel:"Color", opts:[{pack:"Blue", sku:"MFB-74"},{pack:"Green", sku:"MFB-74G"},{pack:"Red", sku:"MFB-74R"}], desc:"All-purpose cloth for counters, glass, metal and any hard surface. Little or no chemical needed. Color-code by area. 24 per case."},
+    // Carpet Bonnets
+    {id:"m-bonnet-scrub", brand:"mops", name:"Carpet Scrubbing Bonnet", cat:"Mops", sub:"Carpet Bonnets", code:"MCXXXXX", opts:[{pack:"8\"", sku:"C-8"},{pack:"17\"", sku:"C-17"}], desc:"Reversible bonnet with scrubber strips on both sides for light to medium soil. Sizes 8\" to 21\"."},
+    {id:"m-bonnet-thin", brand:"mops", name:"Low-Profile Carpet Bonnet", cat:"Mops", sub:"Carpet Bonnets", code:"MTOXXXXX", opts:[], desc:"Thin bonnet for light-soil carpet cleaning and buffing hard floors. Less operator fatigue. Sizes 8\" to 21\"."},
+    // Upholstery & Spotting
+    {id:"m-spotter", brand:"mops", name:"Hand Spotter Bonnet", cat:"Mops", sub:"Upholstery & Spotting", pack:"8\" with slot", sku:"C-8W/SLOT"},
+    {id:"m-hand-bonnet", brand:"mops", name:"Upholstery Hand Bonnet", cat:"Mops", sub:"Upholstery & Spotting", optLabel:"Style", opts:[{pack:"8\", plain", sku:"UHB"},{pack:"8\", with scrub stripe", sku:"UHBS"}], desc:"For foam-shampooing upholstery. The striped one scrubs harder and has a hand pocket for spotting."},
+    {id:"m-spot-pad", brand:"mops", name:"Bonnet Spotting Pad", cat:"Mops", sub:"Upholstery & Spotting", pack:"Each", sku:"CSB"},
+    {id:"m-leather-mitt", brand:"mops", name:"Leather Buffing Mitt", cat:"Mops", sub:"Upholstery & Spotting", pack:"Each", sku:"LBM", desc:"Fits over your hand for buffing leather and fabric upholstery."}
+
   ];
   /* ============ BRANDS ============
      One box per company. To add a company:
@@ -196,7 +262,12 @@
        "Hand Care":"Soaps and sanitizers for staff and guest areas",
        "Housekeeping":"Restroom, glass, air care, polish and the Galaxy dispensing system",
        "Laundry":"On-premise laundry detergents, bleach, sours, softeners and spotters"
-     }}
+     }},
+    /* hideName:true = customers see the box and category name only, never the maker's name.
+       vendor = the maker's name, used only in the quote email so you know who to order from. */
+    {id:"mops", name:"Mops", boxName:"Mops & Floor Tools", hideName:true, vendor:"Tuway", tagline:"Wet mops, dust mops, microfiber, handles, frames and dusters",
+     categories:["Mops"],
+     blurbs:{"Mops":"Wet and dust mops, microfiber, handles, frames, dusters and carpet bonnets"}}
   ];
   /* Backup photos from ProBlend's brand site (problendsolutions.com), used when the catalog photo is missing */
   var PB_SITE="https://problendsolutions.com/images/products/thumbs/";
@@ -220,14 +291,16 @@
     var c=base.match(/^(\d+)\/(?:1\s+)?(.+)$/);
     return (c?"Case of "+c[1]+" × "+unit(c[2]):unit(base))+fs;
   }
-  function imgFor(sku){return IMG+sku+".JPG"}
+  var TW_IMG = "https://images.jmcatalog.com/prdimgs/Sea23te3x4/TUW/TUW";
+  function imgFor(sku,p){if(p&&p.brand==="mops")return TW_IMG+encodeURIComponent(sku.replace(/\s+/g,""))+".JPG";return IMG+sku+".JPG"}
+  function imgsFor(sku,p){if(p&&p.brand==="mops")return [imgFor(sku,p),TW_IMG+"-"+encodeURIComponent(sku.replace(/\s+/g,""))+".JPG"];return [imgFor(sku)]}
   function inCat(p,c){return p.cats.indexOf(c)>-1}
   function subsIn(p,c){return p.place.filter(function(x){return c==="All"||x[0]===c}).map(function(x){return x[1]})}
   /* ================================== */
   
   var $ = function(id){return document.getElementById(id)};
   var root = $("mq");
-  var state = {brand:BRANDS[0].id, cat:"All", sub:"All", q:""};
+  var state = {brand:BRANDS.length>1?"all":BRANDS[0].id, cat:"All", sub:"All", q:""};
   var KEY = "mcms-quote-list-v2";
   
   // Every orderable line, keyed by item number (or product code + "~other" for "size to confirm")
@@ -235,7 +308,7 @@
   PRODUCTS.forEach(function(p){
     BYID[p.id]=p;
     p.brand = p.brand || BRANDS[0].id;
-    p.brandName = (BYBRAND[p.brand]||BRANDS[0]).name;
+    var B=(BYBRAND[p.brand]||BRANDS[0]); p.brandName = B.hideName?"":B.name; p.vendor = B.vendor||B.name;
     p.place = p.place || [].concat(p.sub).map(function(s){return [p.cat,s]});
     p.cats = []; p.subs = [];
     p.place.forEach(function(x){if(p.cats.indexOf(x[0])<0)p.cats.push(x[0]);if(p.subs.indexOf(x[1])<0)p.subs.push(x[1])});
@@ -245,11 +318,11 @@
       p.opts = p.opts||[];
       p.opts.forEach(function(o){LINES[o.sku]={p:p,pack:size(o.pack),sku:o.sku,note:o.note}});
       if(p.code)LINES[p.code+OTHER]={p:p,pack:"Size to confirm",sku:p.code.replace(/X+$/,"")};
-      p.imgs = (p.img?[p.img]:[]).concat(p.opts.map(function(o){return imgFor(o.sku)}));
+      p.imgs = (p.img?[p.img]:[]); p.opts.forEach(function(o){p.imgs=p.imgs.concat(imgsFor(o.sku,p))});
       if(BACKUP[p.id])p.imgs.push(PB_SITE+BACKUP[p.id]);
     }else{
       LINES[p.sku]={p:p,pack:size(p.pack),sku:p.sku,note:p.note};
-      p.imgs = (p.img?[p.img]:[]).concat([imgFor(p.sku)]);
+      p.imgs = (p.img?[p.img]:[]).concat(imgsFor(p.sku,p));
       if(BACKUP[p.id])p.imgs.push(PB_SITE+BACKUP[p.id]);
     }
   });
@@ -316,10 +389,11 @@
   
   function renderBrands(){
     var boxes=BRANDS.map(function(b){
-      var n=PRODUCTS.filter(function(p){return p.brand===b.id}).length, cs=cats(b.id);
-      return {id:b.id,name:b.name,tag:b.tagline||"",meta:n+" products · "+cs.length+" categories",cats:cs.join(" · ")};
+      var n=PRODUCTS.filter(function(p){return p.brand===b.id}).length, cs=cats(b.id), subs;
+      subs=[];PRODUCTS.forEach(function(p){if(p.brand===b.id)p.subs.forEach(function(x){if(subs.indexOf(x)<0)subs.push(x)})});
+      return {id:b.id,name:b.boxName||b.name,tag:b.tagline||"",meta:n+" products · "+(cs.length>1?cs.length+" categories":subs.length+" types"),cats:cs.length>1?cs.join(" · "):subs.slice(0,5).join(" · ")+(subs.length>5?" + more":"")};
     });
-    if(BRANDS.length>1)boxes.unshift({id:"all",name:"All brands",tag:"Every product we carry",meta:PRODUCTS.length+" products",cats:BRANDS.map(function(b){return b.name}).join(" · ")});
+    if(BRANDS.length>1)boxes.unshift({id:"all",name:"All products",tag:"Everything we carry",meta:PRODUCTS.length+" products",cats:BRANDS.map(function(b){return b.boxName||b.name}).join(" · ")});
     $("mq-brands").innerHTML=boxes.map(function(b){var on=state.brand===b.id;
       return '<button type="button" class="mq-bx" data-brand="'+esc(b.id)+'" aria-pressed="'+on+'">'+(on?'<span class="mq-bx-on">Viewing</span>':'')+
         '<span class="mq-bx-name">'+esc(b.name)+'</span><span class="mq-bx-tag">'+esc(b.tag)+'</span>'+
@@ -380,7 +454,7 @@
     return '<article class="mq-card">'+
       '<button type="button" class="mq-img" data-view="'+esc(p.id)+'" aria-label="View '+esc(p.name)+'">'+imgHTML(p)+'</button>'+
       '<div class="mq-body">'+metaHTML(p)+
-        '<p class="mq-brand">'+esc(p.brandName)+'</p>'+
+        (p.brandName?'<p class="mq-brand">'+esc(p.brandName)+'</p>':'')+
         '<h4 class="mq-name">'+esc(p.name)+'</h4>'+
         '<p class="mq-cat">'+esc(subsIn(p,c).join(" · "))+'</p>'+
         (p.desc?'<p class="mq-desc">'+esc(p.desc)+'</p>':'')+
@@ -403,7 +477,7 @@
         if(state.cat!=="All"&&c!==state.cat)return;
         var items=shown.filter(function(p){return p.brand===bid&&inCat(p,c)});
         if(!items.length)return;
-        var title=(state.brand==="all"?BYBRAND[bid].name+" · ":"")+c, bl=blurb(bid,c);
+        var title=(state.brand==="all"&&!BYBRAND[bid].hideName?BYBRAND[bid].name+" · ":"")+c, bl=blurb(bid,c);
         out+='<section class="mq-section"><h3>'+esc(title)+' <small>'+items.length+' products'+(bl?' · '+esc(bl):'')+'</small></h3><div class="mq-grid">'+items.map(function(p){return card(p,c,idx)}).join("")+'</div></section>';
       });
     }
@@ -428,7 +502,7 @@
     var sizes=p.desc?'<p>'+esc(p.desc)+'</p>':'';
     openPanel('<div class="mq-panel-head"><h3 id="mq-ptitle">'+esc(p.cat)+'</h3><button type="button" class="mq-x" data-close aria-label="Close">×</button></div>'+
       '<div class="mq-panel-body"><div class="mq-detail"><div class="mq-img">'+imgHTML(p)+'</div><div class="mq-dcol">'+
-      metaHTML(p)+'<p class="mq-brand">'+esc(p.brandName)+'</p>'+
+      metaHTML(p)+(p.brandName?'<p class="mq-brand">'+esc(p.brandName)+'</p>':'')+
       '<h4 class="mq-name" style="font-size:19px">'+esc(p.name)+'</h4><p class="mq-cat">'+esc(p.subs.join(" · "))+'</p>'+sizes+
       sizePicker(p,"sd-")+addRow(p,"d")+
       '<p class="mq-note">Need a spec sheet or SDS? Ask in your quote notes and we will send it.</p></div></div></div>');
@@ -522,7 +596,7 @@
   function summaryText(f){
     var lines=Object.keys(list).map(function(k){var L=LINES[k];
       if(L.req)return "• "+list[k]+" case(s) x "+L.p.name+" (spec request): "+L.pack;
-      return "• "+list[k]+" x "+L.p.brandName+" "+L.p.name+" ("+L.pack+")"+(k.indexOf(OTHER)>0?" [code "+L.sku+"]":" #"+L.sku)+(L.note?" ["+L.note+"]":"")});
+      return "• "+list[k]+" x "+(L.p.vendor||L.p.brandName)+" "+L.p.name+" ("+L.pack+")"+(k.indexOf(OTHER)>0?" [code "+L.sku+"]":" #"+L.sku)+(L.note?" ["+L.note+"]":"")});
     return "QUOTE REQUEST\n\nName: "+f.name+"\nBusiness: "+(f.biz||"-")+"\nEmail: "+f.mail+"\nPhone: "+f.phone+
       "\nCity/ZIP: "+(f.city||"-")+"\nPreferred contact: "+f.pref+"\n\nPRODUCTS\n"+lines.join("\n")+"\n\nNOTES\n"+(f.notes||"-");
   }
@@ -560,7 +634,7 @@
       btn.disabled=true; btn.textContent="Sending…";
       var items=Object.keys(list).map(function(k){var L=LINES[k];
         if(L.req)return {qty:list[k],name:L.p.name+" (spec request)",size:L.pack,sku:"",note:"Match to spec"};
-        return {qty:list[k],name:L.p.brandName+" "+L.p.name,size:L.pack,sku:k.indexOf(OTHER)>0?"":L.sku,note:L.note||(k.indexOf(OTHER)>0?"Help choosing size":"")}});
+        return {qty:list[k],name:(L.p.vendor||L.p.brandName)+" "+L.p.name,size:L.pack,sku:k.indexOf(OTHER)>0?"":L.sku,note:L.note||(k.indexOf(OTHER)>0?"Help choosing size":"")}});
       fetch(SHEET_URL,{method:"POST",mode:"no-cors",headers:{"Content-Type":"text/plain;charset=utf-8"},
         body:JSON.stringify({name:f.name,biz:f.biz,mail:f.mail,phone:f.phone,city:f.city,pref:f.pref,notes:f.notes,items:items,website:""})})
       .then(ok).catch(fail);
@@ -611,7 +685,7 @@
   root.addEventListener("change",function(e){
     if(e.target.hasAttribute&&e.target.hasAttribute("data-size")){
       var v=e.target.value, card=e.target.closest(".mq-card,.mq-detail"), box=card&&card.querySelector(".mq-img");
-      if(box&&v.indexOf(OTHER)<0){box.innerHTML=imgHTML(LINES[v].p,imgFor(v))}
+      if(box&&v.indexOf(OTHER)<0){box.innerHTML=imgHTML(LINES[v].p,imgFor(v,LINES[v].p))}
       return;
     }
     var k=e.target.dataset&&e.target.dataset.lqty; if(!k)return;
